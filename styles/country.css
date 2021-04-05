@@ -43,12 +43,12 @@ body,
 }
  
 .grid-container * {
-  border: 3px solid red;
+  /*border: 3px solid red;*/
   position: relative;
 }
  
 .grid-container *:after {
-  content: attr(class);
+  /*content: attr(class);*/
   position: absolute;
   top: 0;
   left: 0;
