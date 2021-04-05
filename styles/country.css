@@ -59,91 +59,75 @@ body,
 
 /*css for carousel*/
 .items {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    user-select: none;
+  min-height: 30vw;
+  top: 50%;
+  transform: translate(0, -50%);
 }
-  
+
 .item {
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
-    /*border-radius: 50%;*/
-    overflow: hidden;
-    transition: all 300ms ease-in-out;
-    z-index: -1;
-    opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 20vw;
+  height: 100%;
+  opacity: 0;
 }
-  
+
 .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
+  width: 100%;
+  height: 75%;
+  object-fit: scale-down;
 }
-  
+
+.item p {
+  opacity: 0;
+}
+
 .item.active {
-    opacity: 1;
-    z-index: 99;
-    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-    background-color: black;
+  opacity: 1;
+  z-index: 1;
 }
-  
+
+.item.active img {
+  background-color: black;
+}
+
+.item.active p {
+  opacity: 1;
+  text-align: center;
+  vertical-align: center;
+  border: 3px solid black;
+  padding: 5px;
+}
+
 .item.prev {
-    z-index: 2;
-    opacity: 0.25;
-    transform: translate(-125%, -50%);
+  opacity: 25%;
+  transform: translate(-100%, 0);
 }
-  
+
 .item.next {
-    z-index: 2;
-    opacity: 0.25;
-    transform: translate(25%, -50%);
+  opacity: 25%;
+  transform: translate(0, 0);
 }
-  
-  .items .button-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 275px;
-    z-index: 100;
-  }
-  
-  .button-container .button {
-    /*color: #fff;
-    font-size: 32px;*/
-    cursor: pointer;
-    position: relative;
-    opacity: 1;
-    transition: all 300ms ease-in-out;
-  }
-  /*
-  .button-container .button:hover {
-    opacity: 1;
-  }*/
-  
-  .button::before {
-    content: "";
-    position: relative;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    z-index: -99;
-  }
-  
-  .button-container #left {
-    float: left;
-    transform: scale(-1, 1);
-  }
-  
-  .button-container #right {
-    float: right;
-  }
+
+.button-container {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  height: 100%;
+}
+
+#left {
+  transform: scale(-1, 1);
+}
+
+#right {
+  left: 100%;
+  transform: translate(-200%, 0);
+}
