@@ -55,8 +55,6 @@ body,
 }
 
 
-
-
 /*css for carousel*/
 .items {
   min-height: 30vw;
@@ -131,4 +129,89 @@ body,
 #right {
   left: 100%;
   transform: translate(-200%, 0);
+}
+
+
+/*css for menu*/
+nav ul { 
+	padding-left: 0;
+	margin-left: 0;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	color:black;
+}
+
+nav a:visited {
+	color: black;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: black;
+}
+	
+nav ul li {
+	font-weight: bold;
+}	
+
+nav ul li a {
+	font-weight: normal;
+}
+	
+/*menu expander*/
+.smallmenu {
+	display:block;
+	text-align: left;
+	padding-top: .5em;
+}	
+					
+.smallmenu a {
+	color: #000000;	
+	font-size: 1em;
+  font-weight: bold;
+	text-decoration: none;
+  font-family:'Press Start 2P', cursive;
+}	
+	
+nav.expander li {
+	display: block;
+}				
+
+.expander {
+	display: none
+}	
+
+.links {
+  width: 98%;
+}
+
+@media screen and (max-width: 60em) {
+  .smallmenu {
+	  display:block;
+	  text-align: left;
+	  padding-top: .5em;
+	}	
+					
+  .smallmenu a {
+	  color: #000000;	
+	  font-size: 1em;
+  	font-weight: bold;
+	  text-decoration: none;
+    font-family:'Press Start 2P', cursive;
+	}	
+	
+  nav.expander li {
+	  display: block;
+	}				
+
+  .expander {
+	  display: none
+	}	
+
+  .links {
+    width: 98%;
+  }
 }
