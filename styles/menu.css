@@ -49,7 +49,7 @@ html, footer, header, menu, nav, section, body
 }
  
 .grid-container *:after {
-  content: attr(class);
+  /*content: attr(class);*/
   position: absolute;
 	top: 0;}
 
