@@ -20,13 +20,37 @@
                 <p>Demographic Graph</p>
                 <img class="graph" src="images/russia/demographicsRussia.png" alt="demographic of Russia" width="75%">
             </div>
-            <div class="navigationBar">
-                <p>Home</p>
-                <p>USA</p>
-                <p>Brazil</p>
-                <p>UK</p>
-                <p>Russia</p>
-            </div>
+            
+  <nav class="navigationBar"> 
+
+<div class="smallmenu">
+<span id="show1">
+  <a href="#" onClick="document.getElementById('text1').style.display='block';
+document.getElementById('hide1').style.display='inline';
+document.getElementById('show1').style.display='none'; return false;" style="text-decoration: none;">
+   &#9776; menu</a> 
+  </span>
+  
+  <span id="hide1" style="display: none;">
+  <a href="#" onClick="document.getElementById('text1').style.display='none';
+document.getElementById('hide1').style.display='none';
+document.getElementById('show1').style.display='inline'; return false;" style="text-decoration: none;">
+  &#9776; menu</a>
+</span>
+</div>
+
+
+<ul id="text1" class="expander">
+    <li><a href="idenx.html">Home</a></li>
+  <li><a href="brazil.html">Brazil</a></li>
+<li><a href="uk.html">England</a></li>
+<li>Russia</li>
+<li><a href="us.html">USA</a></li>
+
+
+</ul>
+
+ </nav></div>
             <div class="memeCarousel" id="carousel">
                 Memes
                 <div class="items">
