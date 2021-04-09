@@ -1,0 +1,157 @@
+html, footer, header, menu, nav, section, body
+{display: block;
+}
+.grid-container {
+  height: 100%;
+  margin: 0;
+}
+ 
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1.2fr 0.8fr;
+  grid-template-rows: 0.4fr 1.6fr 1.7fr 0.3fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    ". title title ."
+    "navigationBar topFive demographicGraph demographicGraph"
+    ". memeCarousel memeCarousel ."
+    "footer footer footer footer";
+}
+
+ 
+.title {
+  grid-area: title;
+}
+ 
+.topFive {
+  grid-area: topFive;
+}
+ 
+.demographicGraph {
+  grid-area: demographicGraph;
+}
+ 
+.navigationBar {
+  grid-area: navigationBar;
+}
+ 
+.memeCarousel {
+  grid-area: memeCarousel;
+}
+ 
+.footer {
+  grid-area: footer;
+}
+ 
+.grid-container * {
+
+  position: relative;
+}
+ 
+.grid-container *:after {
+  content: attr(class);
+  position: absolute;
+	top: 0;}
+
+/* NAV MENU STYLES */
+
+
+nav ul
+	{ 
+        
+	padding-left: 0;
+	margin-left: 0;
+	list-style: none;
+	}
+
+nav a
+	{
+	text-decoration: none;
+	color:black;
+	}
+
+nav a:visited
+	{
+	color: black;
+	}		
+
+
+nav a:hover
+	{
+	text-decoration: underline;
+	color: black;
+	}
+	
+nav ul li
+	{
+	font-weight: bold;
+	}	
+
+nav ul li a
+	{
+	font-weight: normal;
+	}
+	
+/*  MENU EXPANDER */
+
+  .smallmenu	
+	{
+	display:block;
+	text-align: left;
+	padding-top: .5em;
+	}	
+					
+.smallmenu a
+	{
+	color: #000000;	
+	font-size: 1em;
+  	font-weight: bold;
+	text-decoration: none;
+        font-family:'Press Start 2P', cursive;
+	}	
+	
+nav.expander li
+	{
+	display: block;
+	}				
+
+.expander
+	{
+	display: none
+	}	
+
+    .links{
+        width: 98%;
+    }
+
+@media screen and (max-width: 60em) {
+    .smallmenu	
+	{
+	display:block;
+	text-align: left;
+	padding-top: .5em;
+	}	
+					
+.smallmenu a
+	{
+	color: #000000;	
+	font-size: 1em;
+  	font-weight: bold;
+	text-decoration: none;
+        font-family:'Press Start 2P', cursive;
+	}	
+	
+nav.expander li
+	{
+	display: block;
+	}				
+
+.expander
+	{
+	display: none
+	}	
+
+    .links{
+        width: 98%;
+    }
+    }
