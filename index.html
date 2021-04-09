@@ -1,70 +1,55 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
 
-<meta name="author" content="xxxxx">
-<meta name="description" content="xxxxxx">
-<meta name="keywords" content="xxxxxxx">
+    <meta name="author" content="xxxxx">
+    <meta name="description" content="xxxxxx">
+    <meta name="keywords" content="xxxxxxx">
 
-<title>IUPUI-HH Sample</title>
-<link rel="stylesheet" type="text/css" href="styles/menu.css">
+    <title>IUPUI-HH Sample</title>
+    <link rel="stylesheet" type="text/css" href="styles/menu.css">
+  </head>
+  <body>
+    <header>
+      <h1>Cross-cultural ties through social media platforms.</h1>
+    </header>
 
-</head>
-<body>
+    <main>
+      <nav class="navigationBar"> 
+        <div class="smallmenu">
+          <span id="show1">
+            <a href="#" onClick="show();" style="text-decoration: none;">&#9776; menu</a> 
+        </span>
+        
+          <span id="hide1" style="display: none;">
+            <a href="#" onClick="hide();" style="text-decoration: none;">&#9776; menu</a>
+          </span>
+        </div>
 
-<header>
-  <h1>Cross-cultural ties through social media platforms.</h1>
-</header>
+        <ul id="text1" class="expander">
+          <li>Home</li>
+          <li><a href="brazil.html">Brazil</a></li>
+          <li><a href="uk.html">England</a></li>
+          <li><a href="russia.html">Russia</a></li>
+          <li><a href="us.html">USA</a></li>
+        </ul>
+      </nav>
 
-<main>
+      <object type="image/svg+xml" data="images/WorldMap.svg" id="worldMap" width="100%"></object>
 
-   <nav class="navigationBar"> 
+      <p>
+        More than ever our world is connected. 
+        Technology allows for social networking, microblogging, photo sharing, and video sharing. 
+        Platforms like <a href="https://www.facebook.com/">Facebook</a>, <a href="https://www.instagram.com/">Instagram</a>, <a href="https://linkedin.com/">LinkedIn</a>, <a href="https://twitter.com/?lang=en">Twitter</a>, <a href="https://www.whatsapp.com/?lang=en">WhatsApp</a>, <a href="https://telegram.org/">Telegram</a>, <a href="https://www.snapchat.com/">Snapchat</a>, <a href="https://www.youtube.com/">YouTube</a>, <a href="https://vk.com/?lang=en">ВКонтакте</a>, and more provide a method for connections to be made across the globe. 
+        By looking at statistical data on social media usage, a bigger picture of how global connections are made through technology can be seen. 
+      </p>
+    </main>
 
+    <footer>
+      <p>This website is a part of a global classroom collaboration between <a href="https://www.haaga-helia.fi/en">Haaga-Helia University of Applied Science</a> [DIG1TF001] and <a href="https://www.iupui.edu/">Indiana University-Purdue University Indianapolis</a> (IUPUI) [LIS-S604 36571]. </p>
+    </footer>
 
-<div class="smallmenu">
-<span id="show1">
-  <a href="#" onClick="document.getElementById('text1').style.display='block';
-document.getElementById('hide1').style.display='inline';
-document.getElementById('show1').style.display='none'; return false;" style="text-decoration: none;">
-   &#9776; menu</a> 
-  </span>
-  
-  <span id="hide1" style="display: none;">
-  <a href="#" onClick="document.getElementById('text1').style.display='none';
-document.getElementById('hide1').style.display='none';
-document.getElementById('show1').style.display='inline'; return false;" style="text-decoration: none;">
-  &#9776; menu</a>
-</span>
-</div>
-
-
-<ul id="text1" class="expander">
-<li>Home</li>
-  <li><a href="brazil.html">Brazil</a></li>
-<li><a href="uk.html">England</a></li>
-<li><a href="russia.html">Russia</a></li>
-<li><a href="us.html">USA</a></li>
-
-
-</ul>
-
- </nav></div>
-  <object type="image/svg+xml" data="images/WorldMap.svg" id="worldMap" width="100%"></object>
-
-  <p>
-    More than ever our world is connected. 
-    Technology allows for social networking, microblogging, photo sharing, and video sharing. 
-    Platforms like <a href="https://www.facebook.com/">Facebook</a>, <a href="https://www.instagram.com/">Instagram</a>, <a href="https://linkedin.com/">LinkedIn</a>, <a href="https://twitter.com/?lang=en">Twitter</a>, <a href="https://www.whatsapp.com/?lang=en">WhatsApp</a>, <a href="https://telegram.org/">Telegram</a>, <a href="https://www.snapchat.com/">Snapchat</a>, <a href="https://www.youtube.com/">YouTube</a>, <a href="https://vk.com/?lang=en">ВКонтакте</a>, and more provide a method for connections to be made across the globe. 
-    By looking at statistical data on social media usage, a bigger picture of how global connections are made through technology can be seen. 
-  </p>
-
-</main>
-
-<footer>
-  <p>This website is a part of a global classroom collaboration between <a href="https://www.haaga-helia.fi/en">Haaga-Helia University of Applied Science</a> [DIG1TF001] and <a href="https://www.iupui.edu/">Indiana University-Purdue University Indianapolis</a> (IUPUI) [LIS-S604 36571]. </p>
-</footer>
-
-</body>
+  </body>
 </html>
