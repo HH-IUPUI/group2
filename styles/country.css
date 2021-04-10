@@ -97,6 +97,8 @@ body,
   vertical-align: center;
   border: 3px solid black;
   padding: 5px;
+  width: 50vw;
+  transform: translate(-30%, 0);
 }
 
 .item.prev {
