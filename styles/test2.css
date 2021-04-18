@@ -18,17 +18,6 @@ li {
     font-size: x-large;
 }
 
-@media screen and (max-width: 800px) {
-    p {
-        font-size: medium;
-    }
-
-    li {
-        padding: 10px;
-        font-size: large;
-    }
-}
-
 /*grid layout*/
 .grid-container {
     display: grid;
@@ -249,13 +238,16 @@ h1 {
     }
 
     .button-container {
-        top: 18vh;
+        top: 24vh;
         height: 7vh;
         width: 80vw;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
+    .item.active p {
+        transform: translate(-20vw, 0);
+    }
 }
 
 /*menu*/
