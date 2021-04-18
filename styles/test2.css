@@ -120,13 +120,7 @@ h1 {
     }   
 
     .memeCarousel {
-        height: 22em;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .memeCarousel {
-        height: 19em;
+        height: 60vh;
     }
 }
 
@@ -218,7 +212,7 @@ h1 {
     }
 
     .button-container {
-        top: 22vh;
+        top: 25vh;
         height: 9vh;
         width: 70vw;
     }
@@ -234,19 +228,19 @@ h1 {
     }
 
     .item.active p {
-        width: 80vw;
+        width: 80vw;        
+        transform: translate(-35%, 0);
     }
 
     .button-container {
-        top: 24vh;
+        top: 25vh;
         height: 7vh;
         width: 80vw;
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     .item.active p {
-        transform: translate(-20vw, 0);
     }
 }
 
