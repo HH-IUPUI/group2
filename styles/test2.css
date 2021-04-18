@@ -239,8 +239,9 @@ h1 {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
     .item.active p {
+        transform: translate(-25%, 0);
     }
 }
 
