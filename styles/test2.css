@@ -97,9 +97,7 @@ h1 {
 
 .footer {
     grid-area: footer;
-    background-color: #E1EDDF;
-    border-radius: 40px;
-    border: 1px solid rgb(153, 153, 153);
+    border-top: 1px solid rgb(153, 153, 153);
     padding: 10px;
 }
 
@@ -212,8 +210,7 @@ h1 {
     }
 
     .button-container {
-        top: 25vh;
-        height: 9vh;
+        top: 35%;
         width: 70vw;
     }
 }
@@ -227,21 +224,35 @@ h1 {
         width: 18vh;
     }
 
-    .item.active p {
+    /*.item.active p {
         width: 80vw;        
         transform: translate(-27vw, 0);
-    }
+    }*/
 
     .button-container {
-        top: 25vh;
-        height: 7vh;
+        /*top: 25vh;
+        height: 7vh;*/
         width: 80vw;
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
     .item.active p {
-        transform: translate(-24vw, 0);
+        transform: translate(-25%, 0);
+    }
+
+    .button-container {
+        height: 7vh;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .button-container {
+        top: 40%;
+    }
+
+    .item.active p {
+        transform: translate(-20%, 0);
     }
 }
 
