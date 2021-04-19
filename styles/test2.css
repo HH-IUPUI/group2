@@ -224,21 +224,19 @@ h1 {
         width: 18vh;
     }
 
-    /*.item.active p {
-        width: 80vw;        
-        transform: translate(-27vw, 0);
-    }*/
+    .item.active p {
+        width: 80vw;     
+        transform: translate(-35%, 0);
+    }
 
     .button-container {
-        /*top: 25vh;
-        height: 7vh;*/
         width: 80vw;
     }
 }
 
 @media screen and (max-width: 450px) {
     .item.active p {
-        transform: translate(-25%, 0);
+        transform: translate(-35%, 0);
     }
 
     .button-container {
@@ -246,13 +244,27 @@ h1 {
     }
 }
 
+@media screen and (max-width: 440px) {
+    .item.active p {
+        transform: translate(-33%, 0);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .item.active p {
+        transform: translate(-30%, 0);
+    }
+}
+
 @media screen and (max-width: 330px) {
     .button-container {
         top: 40%;
     }
+}
 
+@media screen and (max-width: 310px) {
     .item.active p {
-        transform: translate(-20%, 0);
+        transform: translate(-25%, 0);
     }
 }
 
