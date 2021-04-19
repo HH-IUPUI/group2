@@ -236,23 +236,11 @@ h1 {
 
 @media screen and (max-width: 450px) {
     .item.active p {
-        transform: translate(-35%, 0);
+        transform: translate(-30%, 0);
     }
 
     .button-container {
         height: 7vh;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .item.active p {
-        transform: translate(-33%, 0);
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .item.active p {
-        transform: translate(-30%, 0);
     }
 }
 
