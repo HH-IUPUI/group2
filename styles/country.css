@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap');
 /*css for countries using grid-layout*/
 html,
 body,
+
+body{
+    background-color: #FFFFFF;
+}
+
+p { font-family: PT Serif, serif;
+    color: 2D3142;
+}
+
 .grid-container {
   height: 100%;
   margin: 0;
@@ -20,10 +30,16 @@ body,
  
 .title {
   grid-area: title;
+  color: #2D3142;
+  font-family: 'Poppins', cursive;
+  font-size: 4em;
 }
  
 .topFive {
   grid-area: topFive;
+  font-family: 'PT Serif', serif;
+  color: #2D3142;
+  font-size: 1em;
 }
  
 .demographicGraph {
@@ -32,6 +48,9 @@ body,
  
 .navigationBar {
   grid-area: navigationBar;
+  font-family: 'Poppins', cursive, sans-serif;
+  font-size:1em;
+  color: #2D3142;
 }
  
 .memeCarousel {
@@ -143,16 +162,16 @@ nav ul {
 
 nav a {
 	text-decoration: none;
-	color:black;
+	color: #2D3142;
 }
 
 nav a:visited {
-	color: black;
+	color: #EF8354;
 }
 
 nav a:hover {
 	text-decoration: underline;
-	color: black;
+	color: #EF8354;
 }
 	
 nav ul li {
@@ -171,11 +190,11 @@ nav ul li a {
 }	
 					
 .smallmenu a {
-	color: #000000;	
+	color: #2D3142;	
 	font-size: 1em;
-  font-weight: bold;
+  	font-weight: bold;
 	text-decoration: none;
-  font-family:'Press Start 2P', cursive;
+  	font-family:'Poppins', cursive;
 }	
 	
 nav.expander li {
@@ -198,11 +217,11 @@ nav.expander li {
 	}	
 					
   .smallmenu a {
-	  color: #000000;	
+	  color: #2D3142;	
 	  font-size: 1em;
   	font-weight: bold;
 	  text-decoration: none;
-    font-family:'Press Start 2P', cursive;
+    font-family:'Poppins', cursive;
 	}	
 	
   nav.expander li {
