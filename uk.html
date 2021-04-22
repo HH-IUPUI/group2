@@ -58,7 +58,148 @@
             </nav>
 
 
-            <div class="memeCarousel"></div>
+            <div class="memeCarousel"><div class="slideshow-container">
+                <div class="mySlides animated">
+                    <div class="slide-number">1/4</div>
+                    <img src="https://i.chzbgr.com/full/9590502144/h7BE177C3/funny-meme-about-british-accents-water-bottle-meme-man-bottle-of-water-boohwowoer">
+                </div>
+            
+                <div class="mySlides animated">
+                    <div class="slide-number">2/4</div>
+                    <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/861/943/00a.jpg">
+                </div>
+            
+                <div class="mySlides animated">
+                    <div class="slide-number">3/4</div>
+                    <img src="https://memezila.com/wp-content/Toothbrush-or-something-idk-Im-British-meme-5241.png">
+                </div>
+            
+                <div class="mySlides animated">
+                    <div class="slide-number">4/4</div>
+                    <img src="https://i.pinimg.com/originals/95/16/68/9516684508fb3a997c65854cd026e132.jpg">
+                </div>
+            
+                <a class="slide-prev" onclick="plusSlides(-1)">❮</a>
+                <a class="slide-next" onclick="plusSlides(1)">❯</a>
+            </div>
+            
+            <div class="slide-dot-control">
+                <span class="slide-dot" onclick="currentSlide(1)"></span>
+                <span class="slide-dot" onclick="currentSlide(2)"></span>
+                <span class="slide-dot" onclick="currentSlide(3)"></span>
+                <span class="slide-dot" onclick="currentSlide(4)"></span>
+            </div>
+            <style>
+                .mySlides {
+                    display: none;
+                    height: 100%;
+                    font-family: Arial,Helvetica,sans-serif;
+                }
+                .mySlides img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .slideshow-container {
+                    overflow: hidden;
+                    position: relative;
+                    margin: auto;
+                    width: 500px;
+                    height: 400px;
+                }
+                .slide-prev, .slide-next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                }
+                .slide-next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+                .slide-prev:hover, .slide-next:hover {
+                    background-color: rgba(0,0,0,0.8);
+                }
+                .slide-number {
+                    color: #f2f2f2;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0;
+                }
+                .slide-dot-control {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                .slide-dot {
+                    cursor:pointer;
+                    height: 13px;
+                    width: 13px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                .slide-dot-active, .slide-dot:hover {
+                    background-color: #717171;
+                }
+                
+                /************CSS Animation***********/
+                
+                .animated { 
+                   -webkit-animation-name: fadeIn; 
+                           animation-name: fadeIn; 
+                   -webkit-animation-duration: 1s; 
+                           animation-duration: 1s; 
+                } 
+                @-webkit-keyframes fadeIn { 
+                    0% {opacity: 0;} 
+                    100% {opacity: 1;} 
+                } 
+                @keyframes fadeIn { 
+                    0% {opacity: 0;} 
+                    100% {opacity: 1;} 
+                } 
+                .fadeIn { 
+                    -webkit-animation-name: fadeIn; 
+                    animation-name: fadeIn; 
+                }
+                
+                </style>
+                <script>
+                    var slideIndex = 1;
+                    function showSlides() {
+                        var slides = document.getElementsByClassName("mySlides");
+                        if (slideIndex > slides.length) {slideIndex = 1;}
+                        if (slideIndex < 1) {slideIndex = slides.length;}
+                        for (var i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        var dots = document.getElementsByClassName("slide-dot");
+                        for (var i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" slide-dot-active", "");
+                        }
+                        dots[slideIndex-1].className += " slide-dot-active";
+                     }
+                    function plusSlides(n) {
+                        slideIndex += n;
+                        showSlides();
+                    }
+                    function currentSlide(n) {
+                        slideIndex = n;
+                        showSlides();
+                    }
+                    window.onload = showSlides;
+                    </script>
+            </div>
 
 
             <div class="info"></div>
