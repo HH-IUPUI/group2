@@ -79,6 +79,10 @@ p { font-family: PT Serif, serif;
         grid-template-columns: auto;
         grid-template-areas: "title" "navigationBar" "topFive" "demographicGraph" "memeCarousel" "info" "footer";
     } 
+    
+    .memeCarousel {
+        height: 60vh;
+    }
 }
 
 
