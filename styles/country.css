@@ -74,6 +74,13 @@ p { font-family: PT Serif, serif;
   left: 0;
 }
 
+@media screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-areas: "title" "navigationBar" "topFive" "demographicGraph" "memeCarousel" "info" "footer";
+    } 
+}
+
 
 /*css for carousel*/
 .items {
