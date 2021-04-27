@@ -1,0 +1,97 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.2fr 3fr 1.1fr 1fr;
+
+  grid-template-areas:
+    "homeTitle homeTitle homeTitle homeTitle homeTitle homeTitle"
+    "homeButton brazilButton englandButton russiaButton usaButton conclusionButton"
+    "aboutHome aboutHome aboutHome mapHome mapHome mapHome"
+    "infoHome infoHome infoHome infoHome infoHome infoHome"
+    ". . . . . .";
+}
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap");
+
+body {
+  width: 1420px;
+  margin: 0 auto;
+  background-color: rgb(207, 207, 207);
+}
+
+h1 {
+  color: white;
+  font-family: "PT Serif", serif;
+  font-family: "Poppins", cursive, sans-serif;
+}
+h2 {
+  color: white;
+  font-family: "PT Serif", serif;
+  text-align: center;
+}
+h3 {
+  font-family: "Poppins", cursive, sans-serif;
+}
+h5 {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", cursive, sans-serif;
+}
+
+.homeTitle {
+  grid-area: homeTitle;
+  background-color: rgb(45, 49, 66);
+  text-align: center;
+}
+
+.homeButton {
+  grid-area: homeButton;
+  background-color: rgb(79, 93, 117);
+  text-align: center;
+}
+
+.brazilButton {
+  grid-area: brazilButton;
+  text-align: center;
+  background-color: rgb(79, 93, 117);
+}
+
+.englandButton {
+  grid-area: englandButton;
+  text-align: center;
+  background-color: rgb(79, 93, 117);
+}
+
+.russiaButton {
+  grid-area: russiaButton;
+  text-align: center;
+  background-color: rgb(79, 93, 117);
+}
+
+.usaButton {
+  grid-area: usaButton;
+  text-align: center;
+  background-color: rgb(79, 93, 117);
+}
+
+.conclusionButton {
+  grid-area: conclusionButton;
+  text-align: center;
+  background-color: rgb(79, 93, 117);
+}
+
+.aboutHome {
+  grid-area: aboutHome;
+
+  background-color: rgb(207, 207, 207);
+}
+
+.mapHome {
+  grid-area: mapHome;
+
+  background-color: rgb(207, 207, 207);
+}
+
+.infoHome {
+  grid-area: infoHome;
+  background-color: rgb(79, 93, 117);
+}
