@@ -1,12 +1,11 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 0.2fr 3fr 1.1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
   grid-template-areas:
     "homeTitle homeTitle homeTitle homeTitle homeTitle homeTitle"
     "homeButton brazilButton englandButton russiaButton usaButton conclusionButton"
-    "aboutHome aboutHome aboutHome mapHome mapHome mapHome"
+    "aboutHome aboutHome mapHome mapHome mapHome mapHome "
     "infoHome infoHome infoHome infoHome infoHome infoHome"
     ". . . . . .";
 }
@@ -24,17 +23,20 @@ h1 {
   font-family: "Poppins", cursive, sans-serif;
 }
 h2 {
+  font-family: "Poppins", cursive, sans-serif;
+}
+.nav {
   color: white;
   font-family: "PT Serif", serif;
   text-align: center;
 }
-h3 {
-  font-family: "Poppins", cursive, sans-serif;
-}
-h5 {
+.footer {
   text-align: center;
   color: white;
   font-family: "Poppins", cursive, sans-serif;
+}
+.footer a {
+  color: #bfc0c0;
 }
 
 .homeTitle {
@@ -45,53 +47,74 @@ h5 {
 
 .homeButton {
   grid-area: homeButton;
-  background-color: rgb(79, 93, 117);
+  background-color: #4f5d75;
   text-align: center;
 }
-.homeButton:hover{ 
+.homeButton:hover { 
   background-color: #EF8354;
 }
-
+.homeButton a {
+  text-decoration: none;
+}
 .brazilButton {
   grid-area: brazilButton;
+  background-color: #4f5d75;
   text-align: center;
-  background-color: rgb(79, 93, 117);
 }
 .brazilButton:hover { 
   background-color: #EF8354;
 }
+.brazilButton a {
+  text-decoration: none;
+}
 .englandButton {
   grid-area: englandButton;
+  background-color: #4f5d75;
   text-align: center;
-  background-color: rgb(79, 93, 117);
 }
 .englandButton:hover { 
   background-color: #EF8354;
 }
+.englandButton a {
+  text-decoration: none;
+}
 .russiaButton {
   grid-area: russiaButton;
+  background-color: #4f5d75;
   text-align: center;
-  background-color: rgb(79, 93, 117);
 }
 .russiaButton:hover { 
   background-color: #EF8354;
 }
+.russiaButton a {
+  text-decoration: none;
+}
 .usaButton {
   grid-area: usaButton;
+  background-color: #4f5d75;
   text-align: center;
-  background-color: rgb(79, 93, 117);
 }
 .usaButton:hover { 
   background-color: #EF8354;
 }
+.usaButton a {
+  text-decoration: none;
+}
 .conclusionButton {
   grid-area: conclusionButton;
+  background-color: #4f5d75;
   text-align: center;
-  background-color: rgb(79, 93, 117);
 }
 .conclusionButton:hover { 
   background-color: #EF8354;
 }
+.conclusionButton a {
+  text-decoration: none;
+}
+#current {
+  background-color: #EF8354;
+}
+
 .aboutHome {
   grid-area: aboutHome;
 
