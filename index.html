@@ -18,12 +18,30 @@
         	<h1>Cross-Cultural Ties Through Social Media Platforms</h1>
       	</div>
 
-      	<div class="homeButton" id="current"><p class="nav">Home</p></div>
-      	<div class="brazilButton"><a href="brazil.html"><p class="nav">Brazil</p></a></div>
-      	<div class="englandButton"><a href="uk.html"><p class="nav">UK</p></a></div>
-     	  <div class="russiaButton"><a href="russia.html"><p class="nav">Russia</p></a></div>
-      	<div class="usaButton"><a href="us.html"><p class="nav">USA</p></a></div>
-      	<div class="conclusionButton"><p class="nav">Conclusion</p></div>
+      	<div class="home button" id="current"><p class="nav">Home</p></div>
+      	<div class="brazil button"><a href="brazil.html"><p class="nav">Brazil</p></a></div>
+      	<div class="england button"><a href="uk.html"><p class="nav">UK</p></a></div>
+     	  <div class="russia button"><a href="russia.html"><p class="nav">Russia</p></a></div>
+      	<div class="usa button"><a href="us.html"><p class="nav">USA</p></a></div>
+      	<div class="conclusion button"><p class="nav">Conclusion</p></div>
+
+        <div class="phoneNav">
+          <span id="show">
+            <a href="#" onClick="show();" style="text-decoration: none;"><p class="nav">&#9776; Menu</p></a> 
+          </span>
+          <span id="hide" style="display: none;">
+            <a href="#" onClick="hide();" style="text-decoration: none;"><p class="nav">&#9776; Menu</p></a>
+          </span>
+        </div>
+          <div id="expander">
+            <div class="phoneButton home" id="current"><p class="nav">Home</p></div>
+            <div class="phoneButton brazil"><a href="brazil.html"><p class="nav">Brazil</p></a></div>
+            <div class="phoneButton england"><a href="uk.html"><p class="nav">UK</p></a></div>
+            <div class="phoneButton russia"><a href="russia.html"><p class="nav">Russia</p></a></div>
+            <div class="phoneButton usa"><a href="us.html"><p class="nav">USA</p></a></div>
+            <div class="phoneButton conclusion"><a><p class="nav">Conclusion</p></a></div>
+          </div>
+        
 
       	<div class="aboutHome">
         <h2>About</h2>
@@ -43,8 +61,12 @@
           statistical data on social media usage, a bigger picture of how global
           connections are made through technology can be seen.
         </p>
-        <p>
+        <p id="mapRight">
           To explore this page, use the map on the right-hand side of the screen
+          to explore how each country uses social media.
+        </p>
+        <p id="mapBelow">
+          To explore this page, use the map below
           to explore how each country uses social media.
         </p>
       </div>
@@ -60,5 +82,6 @@
         </p>
       </div>
     </div>
+    <script src="scripts/menu.js"></script>
   </body>
 </html>
