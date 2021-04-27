@@ -48,37 +48,50 @@ h5 {
   background-color: rgb(79, 93, 117);
   text-align: center;
 }
+.homeButton:hover{ 
+  background-color: #EF8354;
+}
 
 .brazilButton {
   grid-area: brazilButton;
   text-align: center;
   background-color: rgb(79, 93, 117);
 }
-
+.brazilButton:hover { 
+  background-color: #EF8354;
+}
 .englandButton {
   grid-area: englandButton;
   text-align: center;
   background-color: rgb(79, 93, 117);
 }
-
+.englandButton:hover { 
+  background-color: #EF8354;
+}
 .russiaButton {
   grid-area: russiaButton;
   text-align: center;
   background-color: rgb(79, 93, 117);
 }
-
+.russiaButton:hover { 
+  background-color: #EF8354;
+}
 .usaButton {
   grid-area: usaButton;
   text-align: center;
   background-color: rgb(79, 93, 117);
 }
-
+.usaButton:hover { 
+  background-color: #EF8354;
+}
 .conclusionButton {
   grid-area: conclusionButton;
   text-align: center;
   background-color: rgb(79, 93, 117);
 }
-
+.conclusionButton:hover { 
+  background-color: #EF8354;
+}
 .aboutHome {
   grid-area: aboutHome;
 
