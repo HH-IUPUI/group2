@@ -2,7 +2,7 @@ var n = document.getElementById("memeNumber").value;
 
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
-const button = document.querySelectorAll(".button");
+const button = document.querySelectorAll(".carouselButton");
 
 let current = 0;
 let prev = n-1;
