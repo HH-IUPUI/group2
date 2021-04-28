@@ -1,3 +1,6 @@
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap");
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -8,7 +11,6 @@
     "aboutHome aboutHome mapHome mapHome mapHome mapHome "
     "infoHome infoHome infoHome infoHome infoHome infoHome";
 }
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap");
 
 body {
   width: 92%;
