@@ -52,28 +52,28 @@ h2 {
 	text-align: center;
 }
 
-.home { 
+.homeButton { 
 	grid-area: homeButton; 
 }
 
-.brazil { 
+.brazilButton { 
 	grid-area: brazilButton; 
 }
 
-.england { 
+.englandButton { 
 	grid-area: englandButton; 
 
 }
 
-.russia { 
+.russiaButton { 
 	grid-area: russiaButton; 
 }
 
-.usa { 
+.usaButton { 
 	grid-area: usaButton; 
 }
 
-.conclusion { 
+.conclusionButton { 
 	grid-area: conclusionButton; 
 }
 
