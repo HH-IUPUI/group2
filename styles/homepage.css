@@ -19,10 +19,10 @@ body {
 h1 {
   color: white;
   font-family: "PT Serif", serif;
-  font-family: "Poppins", cursive, sans-serif;
+  font-family: "Poppins", cursive;
 }
 h2 {
-  font-family: "Poppins", cursive, sans-serif;
+  font-family: "Poppins", cursive;
 }
 .nav {
   color: white;
@@ -32,7 +32,7 @@ h2 {
 .footer {
   text-align: center;
   color: white;
-  font-family: "Poppins", cursive, sans-serif;
+  font-family: "Poppins", cursive;
 }
 .footer a {
   color: #bfc0c0;
