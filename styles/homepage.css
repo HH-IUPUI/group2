@@ -35,7 +35,6 @@ h2 {
   color: white;
   font-family: "PT Serif", serif;
   text-align: center;
-  padding: 1px;
 }
 .footer {
   text-align: center;
@@ -113,6 +112,7 @@ h2 {
 
   .phoneNav {
     grid-area: phoneNav;
+    padding: 15px;
   }
 
   .button {
