@@ -2,16 +2,47 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Practice Layout</title>
-        <meta name="XXX" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/country.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+    <meta name="author" content="Axel Wills">
+    <meta name="description" content="Social Media Usage in the United Kingdom (UK)">
+    <meta name="keywords" content="social media, united kingdom, uk, ">
+        
+    <title>Cross-cultural Ties Through Social Media - UK</title>
+    <link rel="stylesheet" type="text/css" href="styles/countries.css">
        
     </head>
     <body>
         <div class="grid-container">
-            <div class="title"><h1>United Kingdom</U></h1></div>
+      <div class="homeTitle">
+        <h1>Cross-cultural Ties Through Social Media Platforms</h1>
+      </div>
+        
+      <div class="home button"><a href="index.html"><p class="nav">Home</p></a></div>
+      <div class="brazil button"><a href="brazil.html"><p class="nav">Brazil</p></a></div>
+      <div class="england button"><a href="uk.html"><p class="nav">UK</p></a></div>
+      <div class="russia button"><a href="russia.html"><p class="nav">Russia</p></a></div>
+      <div class="usa button" id="current"><p class="nav">USA</p></div>
+      <div class="conclusion button"><a href="conclusion.html"><p class="nav">Conclusion</p></div>
+      
+      <div class="phoneNav">
+        <span id="show">
+          <a href="#" onClick="show();" style="text-decoration: none;"><p class="nav">&#9776; Menu</p></a> 
+        </span>
+        <span id="hide" style="display: none;">
+          <a href="#" onClick="hide();" style="text-decoration: none;"><p class="nav">&#9776; Menu</p></a>
+        </span>
+      </div>
+      <div id="expander">
+        <div class="phoneButton home"><a href="index.html"><p class="nav">Home</p></a></div>
+        <div class="phoneButton brazil"><a href="brazil.html"><p class="nav">Brazil</p></a></div>
+        <div class="phoneButton england"><a href="uk.html"><p class="nav">UK</p></a></div>
+        <div class="phoneButton russia"><a href="russia.html"><p class="nav">Russia</p></a></div>
+        <div class="phoneButton usa" id="current"><p class="nav">USA</p></div>
+        <div class="phoneButton conclusion"><a href="conclusion.html"><p class="nav">Conclusion</p></a></div>
+      </div>
+          
+        <div class="grid-container">
+            <div class="countryTitle"><h1>United Kingdom</U></h1></div>
 
 
             <div class="topFive"><h1>Top 5 Social Platforms:</h1>
@@ -52,7 +83,7 @@
                 <ul id="text1" class="expander">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="brazil.html">Brazil</a></li>
-                    <li>England</li>
+                    <li><a href="uk.html">UK</li>
                     <li><a href="russia.html">Russia</a></li>
                     <li><a href="us.html">USA</a></li>
                 </ul>
