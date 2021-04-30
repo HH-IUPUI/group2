@@ -38,6 +38,11 @@ h3 {
 	font-family: "PT Serif", serif;
 	text-align: center;
 }
+.phoneNav a {
+	color: white;
+	font-family: "PT Serif", serif;
+	text-align: center;
+}
 .footer {
 	text-align: center; 
 	color: white;
