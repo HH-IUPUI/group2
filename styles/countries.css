@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap");
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
     "homeTitle homeTitle homeTitle homeTitle homeTitle homeTitle"
     "homeButton brazilButton englandButton russiaButton usaButton conclusionButton"
     "countryTitle countryTitle countryTitle countryTitle countryTitle countryTitle"
@@ -40,14 +40,15 @@ h3 {
 	text-align: center; 
 	color: white;
 	font-family: "Poppins", cursive;
+    font-size: smaller;
 }
 
 .footer a {
 	color: #bfc0c0;
 }
 
-.homeTitle { 
-	grid-area: homeTitle;
+.homeTitle {
+    grid-area: homeTitle;
     background-color: rgb(45, 49, 66);
 	text-align: center;
 }
@@ -110,6 +111,10 @@ h3 {
 
 .memeCarousel { 
 	grid-area: memeCarousel; 
+}
+
+.memeCarousel h3 {
+    text-align: center;
 }
 
 .infoHome { 
@@ -235,14 +240,14 @@ a {
     }
 
     .button-container {
-        top: 35%;
-        width: 70vw;
+       width: 70vw;
+       transform: translate(10%, 50%);
     }
 }
 
 @media screen and (max-width: 600px) {
-    .items {
-        top: 10vh;
+    .memeCarousel {
+        height: 45vh;
     }
 
     .item {
@@ -260,23 +265,22 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+    .memeCarousel {
+        height: 50vh;
+    }
+
     .item.active p {
         transform: translate(-30%, 0);
     }
 
     .button-container {
         height: 7vh;
+        bottom: 20%;
     }
 }
 
-@media screen and (max-width: 330px) {
-    .button-container {
-        top: 40%;
-    }
-}
-
-@media screen and (max-width: 310px) {
-    .item.active p {
-        transform: translate(-25%, 0);
+@media screen and (max-width: 350px) {
+    .memeCarousel {
+        height: 60vh;
     }
 }
