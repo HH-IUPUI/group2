@@ -78,7 +78,7 @@ h2 {
 .button a, .phoneButton a {
   text-decoration: none;
 }
-#current {
+.current {
   background-color: #EF8354;
 }
 
