@@ -30,7 +30,9 @@ h2 {
 h3 {
 	font-family: "Poppins", cursive;
 }
-
+.graph{
+	width:75%
+}
 .nav {
 	color: white;
 	font-family: "PT Serif", serif;
